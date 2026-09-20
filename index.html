@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kafka Hub — Game Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="crown">♛</span><span>KAFKA<span>HUB</span></span></a>
+    <nav class="nav">
+      <a class="active" href="#home">⌂ <span>Home</span></a>
+      <a href="download.html">⬇ <span>Download</span></a>
+      <a href="scripts.html">⌘ <span>Scripts</span></a>
+      <a href="#modded">🎮 <span>Modded</span></a>
+      <a href="#mygames">♙ <span>Mygame</span></a>
+      <a
+  href="https://discord.gg/5zS9w28ZY"
+  target="_blank"
+  rel="noopener"
+>
+  <img src="https://cdn.simpleicons.org/discord/ffffff"
+       alt="Discord"
+       class="discord-icon">
+  <span>Discord</span>
+</a>
+    </nav>
+    <label class="search"><span>⌕</span><input id="searchInput" placeholder="Search games..." /><b>⌕</b></label>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">PLAY <i>✦</i> EXPLORE <i>✦</i> ENJOY</div>
+        <h1>WELCOME TO<br><strong>KAFKA HUB</strong></h1>
+        <p>Your ultimate destination for the best games.<br>Explore, play, and enjoy your favorite<br>modded and original games — all in one place.</p>
+        <a class="primary-btn" href="#modded">▶ &nbsp; Start Playing</a>
+        <section class="presence-panel" aria-live="polite">
+          <div class="presence-info">
+            <p><span id="statusDot" class="status-dot offline"></span><span id="onlineStatus">Checking status...</span></p>
+            <span id="currentGame">Loading Roblox activity...</span>
+            <small id="lastUpdated"></small>
+          </div>
+          <a
+  id="joinGameBtn"
+  class="join-game-btn"
+  href="#"
+  target="_blank"
+  rel="noopener noreferrer"
+  hidden
+  style="display: none;"
+>
+  Join Current Game →
+</a>
+        </section>
+      </div>
+      <div class="hero-art" aria-label="Kafka Hub character artwork"><img class="hero-character" src="assets/kafka-character.png" alt="Kafka Hub character" /></div>
+    </section>
+
+    <section class="section" id="modded">
+      <div class="section-heading">
+        <div><h2>🎮 <span>MODDED <em>GAMES</em></span></h2><p>Enjoy your favorite games with extra features and mods.</p></div>
+        <button class="outline-btn" data-view="modded">View All →</button>
+      </div>
+      <div class="cards-grid" id="moddedGrid"></div>
+    </section>
+
+    <section class="section" id="mygames">
+      <div class="section-heading">
+        <div><h2>♙ <span>MY <em>GAMES</em></span></h2><p>Games created and developed by me.</p></div>
+        <button class="outline-btn" data-view="mygames">View All →</button>
+      </div>
+      <div class="cards-grid" id="myGrid"></div>
+    </section>
+
+    <div class="empty" id="emptyState" hidden>No games found. Try another search.</div>
+  </main>
+
+  <footer>
+    <a class="brand" href="#"><span class="crown">♛</span><span>KAFKA<span>HUB</span></span></a>
+    <div class="footer-links"><a href="#home">Home</a><a href="download.html">Download</a><a href="scripts.html">Scripts</a><a href="#modded">Modded</a><a href="#mygames">Mygame</a></div>
+    <div class="social">◉ &nbsp; ▶ &nbsp; ◈</div>
+    <small>© 2025 Kafka Hub. All rights reserved.</small>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

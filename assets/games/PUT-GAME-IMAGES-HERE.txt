@@ -1,0 +1,9 @@
+Put your game card images in this folder.
+
+Example:
+assets/games/sae-modded.png
+assets/games/pet-simulator.png
+assets/games/anime-fighters.png
+
+The filenames are already connected in script.js.
+You can change the image filename/path in each game's `image:` property.
