@@ -257,3 +257,114 @@
   .nav a span{display:inline}
   .search{width:auto;flex:1;min-width:0}
 }
+
+/* =========================================================
+   GLOBAL COSMIC SPACE BACKGROUND — ALL PAGES
+   ========================================================= */
+html, body{
+  min-height:100%;
+}
+
+body{
+  background-color:#02050d;
+  background-image:
+    linear-gradient(rgba(2,5,13,.28),rgba(2,5,13,.28)),
+    url('assets/space-bg.gif');
+  background-size:cover, cover;
+  background-position:center, center;
+  background-repeat:no-repeat, no-repeat;
+  background-attachment:fixed, fixed;
+}
+
+/* Keep the cosmic background visible through the main page areas. */
+main{
+  background:transparent;
+}
+
+.site-header{
+  background:rgba(2,5,16,.78);
+  border-bottom-color:rgba(104,74,190,.42);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+}
+
+.hero,
+.download-hero,
+.scripts-hero{
+  background:rgba(3,7,18,.48) !important;
+  border-bottom-color:rgba(112,72,220,.55) !important;
+}
+
+.hero-art{
+  background:
+    linear-gradient(90deg,rgba(2,5,13,.70),rgba(2,5,13,.30),rgba(2,5,13,.05)),
+    radial-gradient(ellipse at 72% 50%,rgba(119,59,255,.16),transparent 62%) !important;
+}
+
+.download-hero,
+.scripts-hero{
+  background:
+    linear-gradient(90deg,rgba(2,5,13,.72),rgba(5,7,22,.42)),
+    radial-gradient(ellipse at 75% 20%,rgba(120,55,255,.22),transparent 60%) !important;
+}
+
+.section{
+  background:transparent;
+}
+
+/* Glassy cosmic panels so the new background remains visible. */
+.game-card,
+.script-card,
+.download-item,
+.admin-form,
+.admin-item,
+.outline-btn,
+.admin-tab,
+.search,
+.presence-panel{
+  background:rgba(5,12,30,.78) !important;
+  border-color:rgba(94,76,183,.58) !important;
+  box-shadow:0 12px 35px rgba(0,0,0,.28);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+}
+
+.thumb,
+.script-thumb{
+  background-color:rgba(7,12,29,.75);
+}
+
+footer{
+  border-top-color:rgba(93,72,172,.42);
+}
+
+/* Purple/blue cosmic accent colors. */
+:root{
+  --red:#a96cff;
+  --red2:#c58cff;
+}
+
+.primary-btn,
+.play-btn{
+  background:linear-gradient(135deg,#7b4dff,#b45cff) !important;
+  box-shadow:0 5px 25px rgba(124,77,255,.28);
+}
+
+.game-card:hover{
+  border-color:#a56bff;
+  box-shadow:0 10px 35px rgba(113,68,255,.22);
+}
+
+.game-card:hover::before{
+  background:linear-gradient(120deg,transparent 0%,transparent 38%,#8d5cff 50%,#d18cff 56%,transparent 68%,transparent 100%);
+}
+
+.game-card:hover::after{
+  box-shadow:0 0 18px rgba(132,83,255,.55),0 0 35px rgba(132,83,255,.22);
+}
+
+@media(max-width:620px){
+  body{
+    background-attachment:scroll, scroll;
+  }
+}
